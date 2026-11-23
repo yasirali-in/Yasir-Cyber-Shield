@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#07111f">
+  <meta name="description" content="Yasir Cyber Shield — cybersecurity learning and file analysis semester project.">
+  <title>Yasir Cyber Shield | Security Center</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="app-shell">
+  <aside class="sidebar" id="sidebar">
+    <a class="brand" href="#" data-page="overview"><span class="brand-mark">YS</span><span><b>YASIR</b><small>CYBER SHIELD</small></span></a>
+    <div class="side-label">WORKSPACE</div>
+    <nav class="nav">
+      <button class="nav-link active" data-page="overview"><span>⌂</span> Overview</button>
+      <button class="nav-link" data-page="file-scan"><span>⬡</span> File Scanner <i class="new-dot"></i></button>
+      <button class="nav-link" data-page="url-check"><span>↗</span> URL Checker</button>
+      <button class="nav-link" data-page="ip-check"><span>◎</span> IP Lookup</button>
+    </nav>
+    <div class="side-label">LEARN & PRACTICE</div>
+    <nav class="nav">
+      <button class="nav-link" data-page="courses"><span>▤</span> Cybersecurity Course</button>
+      <button class="nav-link" data-page="quiz"><span>✳</span> Knowledge Quiz</button>
+      <button class="nav-link" data-page="resources"><span>◈</span> Security Resources</button>
+    </nav>
+    <div class="sidebar-bottom">
+      <div class="side-help"><div class="help-icon">?</div><b>Need a hand?</b><p>Explore the course to strengthen your security skills.</p><button data-page="courses">Explore course <span>→</span></button></div>
+      <div class="profile"><div class="avatar">YA</div><div><b>Yasir Ali</b><small>Student workspace</small></div><span class="profile-dots">•••</span></div>
+    </div>
+  </aside>
+
+  <main class="main">
+    <header class="topbar"><button class="mobile-menu" id="mobileMenu">☰</button><div class="breadcrumb">Workspace <span>/</span> <b id="crumb">Overview</b></div><div class="top-actions"><span class="status-pill"><i></i> Security center online</span><button class="icon-btn" title="Notifications">♧</button><div class="top-avatar">YA</div></div></header>
+    <div class="content">
+      <section class="page active" id="page-overview">
+        <div class="welcome-row"><div><div class="eyebrow"><span class="eyebrow-line"></span> YOUR DIGITAL SAFETY HUB</div><h1>Security starts <em>with awareness.</em></h1><p class="muted">Analyze files, inspect indicators and build practical cybersecurity knowledge.</p></div><div class="date-chip">✦ &nbsp; STUDENT SECURITY LAB</div></div>
+        <div class="hero-card"><div class="hero-copy"><div class="hero-tag"><span></span> CYBER DEFENSE TOOLKIT</div><h2>Stay one step<br>ahead of <em>threats.</em></h2><p>A learning-focused security workspace for safer digital habits and basic threat intelligence checks.</p><button class="primary-btn" data-page="file-scan">Start a file scan <span>↗</span></button></div><div class="hero-art"><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="shield"><div class="shield-inner">✓</div></div><span class="art-node node-a">ENCRYPTED</span><span class="art-node node-b">THREAT MONITOR</span><span class="art-node node-c">SECURE</span></div></div>
+        <div class="section-heading"><div><h3>Security workspace</h3><p>Choose a tool to get started</p></div><span class="subtle">01 — 04</span></div>
+        <div class="tool-grid">
+          <button class="tool-card" data-page="file-scan"><span class="tool-icon cyan">⬡</span><span class="tool-arrow">↗</span><b>File Scanner</b><p>Review file metadata and check reputation with VirusTotal API.</p><small>FILE ANALYSIS</small></button>
+          <button class="tool-card" data-page="url-check"><span class="tool-icon purple">↗</span><span class="tool-arrow">↗</span><b>URL Checker</b><p>Check a URL's reputation before opening unfamiliar links.</p><small>LINK SECURITY</small></button>
+          <button class="tool-card" data-page="ip-check"><span class="tool-icon green">◎</span><span class="tool-arrow">↗</span><b>IP Lookup</b><p>Review basic IP reputation and network ownership details.</p><small>THREAT INTELLIGENCE</small></button>
+          <button class="tool-card" data-page="courses"><span class="tool-icon orange">▤</span><span class="tool-arrow">↗</span><b>Learn Security</b><p>Explore essential cybersecurity topics and practical advice.</p><small>LEARNING CENTER</small></button>
+        </div>
+        <div class="bottom-grid"><div class="panel"><div class="panel-head"><div><h3>Learning pathway</h3><p>Your cybersecurity foundations</p></div><span class="tiny-count">8 MODULES</span></div><div class="path-row"><span class="path-number">01</span><div><b>Cybersecurity fundamentals</b><small>Start with the core concepts</small></div><span class="path-arrow">→</span></div><div class="path-row"><span class="path-number">02</span><div><b>Threats & malware</b><small>Understand common attack types</small></div><span class="path-arrow">→</span></div><div class="path-row"><span class="path-number">03</span><div><b>Network & web security</b><small>Learn how systems are protected</small></div><span class="path-arrow">→</span></div><button class="text-btn" data-page="courses">View all modules →</button></div>
+          <div class="panel tip-panel"><div class="tip-symbol">✧</div><div class="eyebrow">SECURITY TIP OF THE DAY</div><h3>Think before<br>you click.</h3><p>Check the sender, inspect the domain and avoid opening unexpected attachments. A moment of caution can prevent a major security incident.</p><span class="tip-foot">AWARENESS IS YOUR FIRST DEFENSE</span></div></div>
+        <div class="disclaimer">Educational project only. A clean or unknown result does not guarantee that a file, URL or IP is safe.</div>
+      </section>
+
+      <section class="page" id="page-file-scan">
+        <div class="page-intro"><div class="eyebrow">THREAT ANALYSIS / 01</div><h1>File <em>scanner.</em></h1><p class="muted">Submit a file for reputation analysis. Files are never executed by this application.</p></div>
+        <div class="scan-layout"><div class="panel scan-panel"><div class="panel-head"><div><h3>Upload a file</h3><p>Choose a file from your device for analysis</p></div><span class="secure-label">⌑ SECURE UPLOAD</span></div>
+          <label class="dropzone" id="dropzone" for="fileInput"><input type="file" id="fileInput" hidden><span class="upload-symbol">↑</span><b>Drop your file here</b><span>or <u>browse files</u> from your computer</span><small>Maximum file size: 32 MB</small></label>
+          <div class="selected-file" id="selectedFile" hidden><span class="file-symbol">▧</span><div><b id="fileName">file.pdf</b><small id="fileMeta">0 KB</small></div><button id="removeFile" class="remove-btn">✕</button></div>
+          <label class="consent"><input type="checkbox" id="consent"> <span>I understand that when VirusTotal mode is enabled, the submitted file may be shared with VirusTotal and its security partners for analysis. I will not upload confidential or personal files.</span></label>
+          <button class="primary-btn full-btn" id="scanButton" disabled>Analyze file <span>→</span></button>
+          <p class="micro-note">Supported by VirusTotal API v3 when configured. Demo mode only calculates local file metadata and SHA-256.</p>
+        </div><div class="panel scan-info"><div class="info-icon">⌘</div><h3>How it works</h3><div class="step"><span>01</span><div><b>Select a file</b><p>Choose a file you have permission to submit.</p></div></div><div class="step"><span>02</span><div><b>Secure processing</b><p>The server calculates a SHA-256 hash and optionally submits the file to VirusTotal.</p></div></div><div class="step"><span>03</span><div><b>Review the report</b><p>Read the available analysis summary and detection counts.</p></div></div><div class="privacy-note">⚑ &nbsp; Never upload confidential, private or sensitive data to public scanning services.</div></div></div>
+        <div id="scanResult" class="panel result-panel" hidden></div>
+      </section>
+
+      <section class="page" id="page-url-check"><div class="page-intro"><div class="eyebrow">THREAT ANALYSIS / 02</div><h1>URL <em>checker.</em></h1><p class="muted">Review a web address before visiting an unfamiliar website.</p></div><div class="panel form-panel"><div class="tool-icon purple">↗</div><h3>Inspect a website URL</h3><p class="muted">Enter the full address including https://</p><div class="input-row"><input id="urlInput" type="url" placeholder="https://example.com"><button class="primary-btn" id="urlButton">Check URL →</button></div><div id="urlResult" class="inline-result" hidden></div><p class="micro-note">Demo mode checks URL format only. Reputation reports require a configured VirusTotal API key.</p></div></section>
+
+      <section class="page" id="page-ip-check"><div class="page-intro"><div class="eyebrow">THREAT ANALYSIS / 03</div><h1>IP <em>lookup.</em></h1><p class="muted">Look up an IPv4 or IPv6 address and review its available reputation information.</p></div><div class="panel form-panel"><div class="tool-icon green">◎</div><h3>Inspect an IP address</h3><p class="muted">Enter an IP address to retrieve its report.</p><div class="input-row"><input id="ipInput" type="text" placeholder="8.8.8.8"><button class="primary-btn" id="ipButton">Look up IP →</button></div><div id="ipResult" class="inline-result" hidden></div><p class="micro-note">Do not use an IP reputation result as the only basis for blocking or trusting a host.</p></div></section>
+
+      <section class="page" id="page-courses"><div class="page-intro"><div class="eyebrow">LEARNING CENTER / 01</div><h1>Cybersecurity <em>course.</em></h1><p class="muted">A beginner-friendly pathway through the essential concepts of digital security.</p></div><div class="course-banner"><div><span class="hero-tag">FOUNDATION TRACK · 8 MODULES</span><h2>Build your security<br><em>knowledge.</em></h2><p>Learn the language, threats and defensive practices used in cybersecurity.</p></div><div class="course-big-icon">⌑</div></div><div class="course-grid" id="courseGrid"></div></section>
+
+      <section class="page" id="page-quiz"><div class="page-intro"><div class="eyebrow">LEARNING CENTER / 02</div><h1>Knowledge <em>quiz.</em></h1><p class="muted">Test your understanding of cybersecurity fundamentals.</p></div><div class="panel quiz-panel"><div class="quiz-top"><span class="tiny-count" id="quizProgress">QUESTION 01 / 08</span><span id="quizScore" class="muted">Score: 0</span></div><div class="progress"><span id="progressBar"></span></div><h2 id="questionText">Loading question...</h2><div id="answers" class="answers"></div><div id="answerFeedback" class="feedback" hidden></div><div class="quiz-footer"><button class="secondary-btn" id="nextQuestion" disabled>Next question →</button></div></div></section>
+
+      <section class="page" id="page-resources"><div class="page-intro"><div class="eyebrow">LEARNING CENTER / 03</div><h1>Security <em>resources.</em></h1><p class="muted">Trusted references to continue learning beyond this project.</p></div><div class="resource-grid"><a class="resource-card" href="https://www.cisa.gov/secure-our-world" target="_blank" rel="noopener"><span>↗</span><small>CYBER AWARENESS</small><b>CISA — Secure Our World</b><p>Practical guidance on passwords, MFA, phishing and software updates.</p><u>Open resource →</u></a><a class="resource-card" href="https://owasp.org/www-project-top-ten/" target="_blank" rel="noopener"><span>↗</span><small>WEB APPLICATION SECURITY</small><b>OWASP Top 10</b><p>Learn about major web application security risks and mitigations.</p><u>Open resource →</u></a><a class="resource-card" href="https://www.nist.gov/cyberframework" target="_blank" rel="noopener"><span>↗</span><small>SECURITY FRAMEWORK</small><b>NIST Cybersecurity Framework</b><p>Explore a structured approach to managing cybersecurity risk.</p><u>Open resource →</u></a><a class="resource-card" href="https://docs.virustotal.com/" target="_blank" rel="noopener"><span>↗</span><small>THREAT INTELLIGENCE</small><b>VirusTotal Documentation</b><p>Understand the API and how file and URL analysis works.</p><u>Open resource →</u></a><a class="resource-card" href="https://www.khanacademy.org/computing/computer-science/cryptography" target="_blank" rel="noopener"><span>↗</span><small>CRYPTOGRAPHY</small><b>Intro to Cryptography</b><p>Study the fundamentals of encryption and secure communication.</p><u>Open resource →</u></a><a class="resource-card" href="https://www.cyber.gov.au/learn-basics" target="_blank" rel="noopener"><span>↗</span><small>BEGINNER GUIDE</small><b>Cyber.gov.au — Learn Basics</b><p>Beginner-friendly cyber safety information and guidance.</p><u>Open resource →</u></a></div></section>
+      <footer class="footer"><span>© 2026 YASIR CYBER SHIELD</span><span>Built for learning · Stay curious. Stay secure.</span></footer>
+    </div>
+  </main>
+</div>
+<script src="app.js"></script>
+</body></html>
